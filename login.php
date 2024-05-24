@@ -41,7 +41,7 @@ if (isset($_GET['logout'])) {
 <head>
     <!-- /*-------------------------------------------------------------------*/ -->
     <title>Inicio de sesión</title>
-    <link rel="stylesheet" href="EstiloLogin.css">
+    <link rel="stylesheet" href="css/EstiloLogin.css">
     <style>
 .header-container {
     display: flex;
@@ -88,7 +88,7 @@ if (isset($_GET['logout'])) {
 function generarMenu()
 {
     ?>
-    <link rel="stylesheet" href="EstiloDatos.css">
+    <link rel="stylesheet" href="css/EstiloDatos.css">
     <header>
     <link href="https://fonts.cdnfonts.com/css/metal-gear-solid" rel="stylesheet">    
 

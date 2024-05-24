@@ -37,13 +37,13 @@ if ($query) {
 <head>
   <title>Nuevo Registro</title>
   <link href="https://fonts.cdnfonts.com/css/metal-gear-solid" rel="stylesheet">    
-  <link rel="stylesheet" href="EstiloLogin.css">
+  <link rel="stylesheet" href="css/EstiloLogin.css">
 </head>
 <body>
 <?php
 function generarMenu() {
   ?>
-      <link rel="stylesheet" href="EstiloDatos.css">
+      <link rel="stylesheet" href="css/EstiloDatos.css">
       <header>
       <h2>Biblioteca</h2>
       </header>

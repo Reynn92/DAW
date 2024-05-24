@@ -35,7 +35,7 @@ if ($query) {
 <head>
   <title>Nuevo juego</title>
   <link href="https://fonts.cdnfonts.com/css/metal-gear-solid" rel="stylesheet">
-  <link rel="stylesheet" href="EstiloLogin.css">
+  <link rel="stylesheet" href="css/EstiloLogin.css">
 </head>
 <body>
 <?php

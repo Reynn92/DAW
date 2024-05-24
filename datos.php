@@ -25,7 +25,7 @@
 
 <head>
 </head>
-<link rel="stylesheet" href="EstiloDatos.css">
+<link rel="stylesheet" href="css/EstiloDatos.css">
 <body>
     <header>
     <link href="https://fonts.cdnfonts.com/css/metal-gear-solid" rel="stylesheet">    

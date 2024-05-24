@@ -1,12 +1,12 @@
 <head>
 </head>
 <link href="https://fonts.cdnfonts.com/css/metal-gear-solid" rel="stylesheet">    
-<link rel="stylesheet" href="EstiloDatos.css">
+<link rel="stylesheet" href="css/EstiloDatos.css">
 <body>
     <?php
     function generarMenu() {
       ?>
-          <link rel="stylesheet" href="EstiloDatos.css">
+          <link rel="stylesheet" href="css/EstiloDatos.css">
           <header>
           <h2>Biblioteca</h2>
           </header>

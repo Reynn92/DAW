@@ -21,7 +21,7 @@
     width: 110px; /* Para que no se rompa en dos líneas, y lo traslade tal cual. */
     margin-left: 50%;
     transform: translateX(-50%); 
-    background-image: url(mas.png);
+    background-image: url('../img/mas.png');
     background-repeat:no-repeat;
     height:30px;
     width:40px;
@@ -32,7 +32,7 @@
 
 }
 .btnEliminar{
-    background-image: url(cross-296507_1280.png);
+    background-image: url('../img/cross-296507_1280.png');
     background-repeat:no-repeat;
     height:30px;
     width:40px;
@@ -43,7 +43,7 @@
     margin-left: 25%;
 }
 .btnEditar{
-    background-image: url(lapiz.png);
+    background-image: url('../img/lapiz.png');
     background-repeat:no-repeat;
     height:30px;
     width:40px;
@@ -54,7 +54,7 @@
     margin-left: 25%;
 }
 body{
-    background-image: url(pixel.jpg);
+    background-image: url('../img/pixel.jpg');
     background-size: cover;
 }
 
