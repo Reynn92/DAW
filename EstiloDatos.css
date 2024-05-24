@@ -1,0 +1,144 @@
+/* margen y padding a 0 para que todo se quede junto y no se separe una etiqueta de otra  */
+* {
+    margin: 0px;
+    padding:0px;
+}
+
+
+
+.contenedorTabla{
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgb(141, 215, 240);
+    overflow: hidden;
+    text-decoration-color: white;
+    box-shadow: 7px 13px 37px #0377adbe;
+    border-radius: 1%;
+}
+.btnNuevo{
+    /* margin: 2px auto;
+    width: 110px; /* Para que no se rompa en dos líneas, y lo traslade tal cual. */
+    margin-left: 50%;
+    transform: translateX(-50%); 
+    background-image: url(mas.png);
+    background-repeat:no-repeat;
+    height:30px;
+    width:40px;
+    background-size: 30px 30px;
+    background-position:center;
+    background-color: transparent;
+    border-color: transparent;
+
+}
+.btnEliminar{
+    background-image: url(cross-296507_1280.png);
+    background-repeat:no-repeat;
+    height:30px;
+    width:40px;
+    background-size: 30px 30px;
+    background-position:center;
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: 25%;
+}
+.btnEditar{
+    background-image: url(lapiz.png);
+    background-repeat:no-repeat;
+    height:30px;
+    width:40px;
+    background-size: 30px 30px;
+    background-position:center;
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: 25%;
+}
+body{
+    background-image: url(pixel.jpg);
+    background-size: cover;
+}
+
+/* width de 400px para que se quede completamente centrado ysin margenes para que no se desordenen los menus */
+nav {
+    margin:auto;
+    /* width:400px; */
+    font-family:Arial, Helvetica, sans-serif;
+    /* con el overflow hidden los contenidos por capas se iran desglosando en funcion del tamaño de los propios contenidos */
+    overflow: hidden;
+    text-align: left;
+    border-bottom: rgb(0, 183, 255) 1px solid;
+    background-color: rgb(0, 204, 255);
+    
+}
+td{
+    background-color: rgba(48, 44, 44, 0.897);
+    color: white;
+}
+th{
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+/* para que no salgan puntitos de las listas */
+ul, ol {
+    list-style:none;
+}
+
+/* para que el menu en esta serie de etiquetas y listas se despliegue desde la izquiera  */
+.nav > li {
+    float:left;
+}
+/* para que el ancho de la barra del menu tenga color y dimensiones , lo podemos tocar al gusto
+para que quede simetrico y organico */
+.nav li a {
+    background-color:rgba(0, 132, 255, 0.808);
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block
+}
+/* color de fondo de los submenus con el hover para hacer el efecto despliegue al pasar el raton */
+.nav li a:hover {
+    background-color:#43434380;
+}
+/* para la ruta que lleva al submeno dentro del primer desplegable que se quede pegado y no se desordene */
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+/* cuando pases el raton por encima despliegue los submenus  */
+.nav li:hover > ul {
+    display:block;
+}
+/* relative para que no se pisen unos desplegables con otros, si no saldra arriba y sera imposible acceder */
+.nav li ul li {
+    position:relative;
+}
+/* desplazamiento a la derecha para que se queden desplegados y no se pisen con las que accedemos */
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+/* casi todo el css desde la clase nav y ordenando en orden jerarquico por rutas a la hora de personalizar  */
+h2{
+    font-family: 'Metal Gear', sans-serif;
+    background-color: black;
+    background-size: 100%;
+    text-align: center;
+    color: rgb(0, 204, 255);
+    height: 60px;
+    border-bottom: 1px solid;
+    /* con estos 3 ajustes se centra cualqueir cosa dentro de un div  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* -------------------------------------------------------------- */
+}
+
+.tabla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
