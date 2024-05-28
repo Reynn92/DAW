@@ -1,2 +1,2 @@
 # DAW
-Proyecto juegos retro daw - Juanmi
+Proyecto juegos retro daw - Kirito
