@@ -30,45 +30,13 @@
     <header>
     <link href="https://fonts.cdnfonts.com/css/metal-gear-solid" rel="stylesheet">    
 
-        <h2 >Encabezado con imagen</h2>
-    </header>
-    <!------------------- INICIO DEL MENU --------------------------------------->
-    <!--contenedor nav que actua como un div donde estaran todos los elementos del menu y la barra-->
-    <nav class="principal">
-        <!-- un ul para hacer la lista y la clase nav para darle estilo donde estaran las opciones principales del menu -->
-        <ul class="nav">
-            <li><a href="index.php">Inicio</a></li>
-            <li><a href="">Tutoria</a>
-                <!-- primer submenu para tutoria desplegandose a la derecha con la configuracion del css -->
-                <ul>
-                    <li><a href="">Tutores</a></li>
-                    <li><a href="">Especialidades</a></li>
-                    <li><a href="">Pruebas</a></li>
-                    <li><a href="">Contacto</a>
-                        <!-- submenu dentro del anterior para desplegarse denuevo en este caso para contacto desde el anterior -->
-                        <ul>
-                            <li><a href="">E-mail</a></li>
-                            <li><a href="">Telefono</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <!-- otra opcion del menu principal con un submenu -->
-            <li><a href="">Cursos</a>
-                <!-- aqui dicho submenu con las opciones que apareceran en el desplegable -->
-                <ul>
-                    <li><a href="">Informatica</a></li>
-                    <li><a href="">Cocina</a></li>
-                    <li><a href="">Peluqueria</a></li>
-                    <li><a href="">Electricidad</a></li>
-                </ul>
-            </li>
-            <li><a href="">Contacto</a></li>
-            <li><a href="login.php">LogIn</a></li>
-            <li><a href="Nuevo.php">Registrate</a></li>
-        </ul>
-    </nav>
-    <!------------------------ FIN DEL MENU  ---------------------------------->
+    <?php
+		include("menu.php");
+      
+      // Llamar a la función para generar el menú
+      generarMenu();
+      ?>
+    
     <?php 
 //incluimos la conexion siempre al principio
 

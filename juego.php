@@ -13,11 +13,13 @@ if (isset($_POST['login_button'])) {
 $nombre = $_POST["Nombre"];
 $plataforma = $_POST["Plataforma"];
 $lanzamiento = $_POST["Lanzamiento"];
+$imagen=$_POST["Imagen"];
 //hacemos la consulta para insertar datos en la tabla de la base de datos 
 $insertar = "INSERT INTO juegos (Nombre,Plataforma,Lanzamiento) VALUES(
     '$nombre', 
     '$plataforma', 
-    '$lanzamiento')";
+    '$lanzamiento',
+    '$imagen')";
 //lanzamos la consulta 
 $query = mysqli_query($con, $insertar);
 //si la consulta funcioa volvemos con el header al "inicio"
@@ -73,6 +75,9 @@ if ($query) {
               </div>
               <div class="campo" class="form-group mb-3">
                   <input type="number" name="Lanzamiento" class="usuario" placeholder="Año de lanzamiento" required>
+              </div>
+              <div class="campo" class="form-group mb-3">
+                  <input type="text" name="Imagen" class="usuario" placeholder="Imagen del juego" required>
               </div>
               <div class="form-group mb-3">
                   <input type="submit" name="login_button" class="buttons" value="Añadir">
