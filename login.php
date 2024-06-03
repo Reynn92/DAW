@@ -39,56 +39,65 @@ if (isset($_GET['logout'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- /*-------------------------------------------------------------------*/ -->
     <title>Inicio de sesión</title>
     <link rel="stylesheet" href="css/EstiloLogin.css">
     <style>
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
 
-.header-right {
-    display: flex;
-    align-items: center;
-}
+    .header-right {
+        display: flex;
+        align-items: center;
+    }
 
-.header-right form {
-    display: inline;
-    margin-left: 10px;
-}
+    .header-right form {
+        display: inline;
+        margin-left: 10px;
+    }
 
-.header-right span {
-    margin-right: 10px;
-    font-weight: bold;
-}
+    .header-right span {
+        margin-right: 10px;
+        font-weight: bold;
+    }
 
-.header-right input[type="submit"] {
-    background-color: #f8f9fa;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
+    .header-right input[type="submit"] {
+        background-color: #f8f9fa;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
 
-.header-right input[type="submit"]:hover {
-    background-color: #e2e6ea;
-}
-
+    .header-right input[type="submit"]:hover {
+        background-color: #e2e6ea;
+    }
     </style>
 </head>
-    <!-- /*-------------------------------------------------------------------*/ -->
-
 <body>
 
 <?php
-	include("menu.php");
+include("menu.php");
 
-	// Llamar a la función para generar el menú
-	generarMenu();
+// Llamar a la función para generar el menú
+generarMenu();
 ?>
+
+<div class="header-container">
+    <div class="header-left">
+        <!-- Aquí puede ir el logo u otra información -->
+    </div>
+    <div class="header-right">
+        <?php if (isset($_SESSION['usuario'])): ?>
+            <span><?php echo $_SESSION['usuario']; ?> (<a href="login.php?logout='1'">Cerrar sesión</a>)</span>
+        <?php else: ?>
+            <span><a href="login.php">Iniciar sesión</a></span>
+        <?php endif; ?>
+    </div>
+</div>
 
 <div class="container">
     <div class="d-flex min-vh-100">

@@ -14,19 +14,7 @@
           <li><a href="">NES</a></li>
           <li><a href="">SnES</a></li>
           <li><a href="">Nintendo64</a>
-          <ul>
-          <li><a href="">E-mail</a></li>
-          <li><a href="">Telefono</a></li>
-          </ul>
           </li>
-          </ul>
-          </li>
-          <li><a href="">Sagas</a>
-          <ul>
-          <li><a href="">Zelda</a></li>
-          <li><a href="">Mario</a></li>
-          <li><a href="">Final Fantasy</a></li>
-          <li><a href="">Pokemon</a></li>
           </ul>
           </li>
           <li><a href="juego.php">Añadir</a></li>
