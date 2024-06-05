@@ -8,12 +8,25 @@ function generarMenu() {
 	  <nav class="principal">
 	  <ul class="nav">
 	  <li><a href="index.php">Inicio</a></li>
-	  <li><a href="">Plataformas</a>
+	  <li><a href="">Juegos</a>
 	  <ul>
+	  <li><a href="datos.php">TODOS</a></li>
 	  <li><a href="datos.php">Gameboy</a></li>
-	  <li><a href="">NES</a></li>
-	  <li><a href="">SnES</a></li>
-	  <li><a href="">Nintendo64</a>
+	  <li><a href="datos.php">NES</a></li>
+	  <li><a href="datos.php">SNES</a></li>
+	  <li><a href="datos.php">Nintendo64</a>
+	  <li><a href="datos.php">PlayStation</a>
+	  </li>
+	  </ul>
+	  </li>
+	  <li><a href="">Mi Colección</a>
+	  <ul>
+	  <li><a href="datos.php">TODOS</a></li>
+	  <li><a href="datos.php">Gameboy</a></li>
+	  <li><a href="datos.php">NES</a></li>
+	  <li><a href="datos.php">SNES</a></li>
+	  <li><a href="datos.php">Nintendo64</a>
+	  <li><a href="datos.php">PlayStation</a>
 	  </li>
 	  </ul>
 	  </li>

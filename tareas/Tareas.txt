@@ -1,0 +1,7 @@
+[X] Mostrar datos de usuarios - Login Y Logout
+[] Subir imagenes a juegos
+[] Mostrar imagenes de juegos
+[] Mostrar juegos 
+[] Mostrar juegos de mi colección
+[] Poder añadir a tu lista juegos de tu colección
+[] Añadir diseño de la web
