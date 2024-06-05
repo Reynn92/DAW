@@ -119,6 +119,9 @@ para que quede simetrico y organico */
     right:-140px;
     top:0px;
 }
+li.right{
+    float: right;
+}
 /* casi todo el css desde la clase nav y ordenando en orden jerarquico por rutas a la hora de personalizar  */
 h2{
     font-family: 'Metal Gear', sans-serif;
