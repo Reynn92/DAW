@@ -4,3 +4,11 @@
 [] Mostrar juegos 
 [] Poder añadir a tu lista juegos de tu colección
 [] Añadir diseño de la web
+
+NOTAS
+
+-añadido el subir archivo
+-lo del menu esta genial ,pero hay una cosa al comprobar el inicio de sesion que vemos luego
+-luego vemos tambien si quieres , que he pensado en cambiar lo de los juegos al registrar por 
+lo de los usuarios que yo tenia pero tengo un par de dudas con unos campos que añadi en mi sql , lo vemos luego 
+-gracias por todo Borja
