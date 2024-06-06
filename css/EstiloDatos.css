@@ -1,6 +1,6 @@
 /* margen y padding a 0 para que todo se quede junto y no se separe una etiqueta de otra  */
 * {
-    margin: 0px;
+    margin: -1px 0px;
     padding:0px;
 }
 
@@ -66,7 +66,7 @@ nav {
     /* con el overflow hidden los contenidos por capas se iran desglosando en funcion del tamaño de los propios contenidos */
     overflow: hidden;
     text-align: left;
-    border-bottom: rgb(0, 183, 255) 1px solid;
+    border-bottom: rgb(0, 183, 255) 0px solid;
     background-color: rgb(0, 204, 255);
     
 }
