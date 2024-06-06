@@ -1,41 +1,3 @@
-<?php
-session_start();
-include("conexion.php");
-$con = conectar();
-if (!$con) {
-    echo "Error de conexión: " . mysqli_connect_error();
-    exit();
-}
-
-$errors = array();
-
-// Inicio de sesión
-if (isset($_POST['login_button'])) {
-    $usuario = mysqli_real_escape_string($con, $_POST['usuario']);
-    $password = mysqli_real_escape_string($con, $_POST['password']);
-
-    $query = "SELECT * FROM usuarios WHERE usuario='$usuario' AND password='$password'";
-    $results = mysqli_query($con, $query);
-
-    if (mysqli_num_rows($results) == 1) {
-        // Inicio de sesión exitoso
-        $_SESSION['usuario'] = $usuario;
-        header('location: datos.php');
-        exit();
-    } else {
-        $errors[] = "Nombre de usuario/contraseña inválidos";
-    }
-}
-
-// Cierre de sesión
-if (isset($_GET['logout'])) {
-    session_destroy();
-    unset($_SESSION['usuario']);
-    header('location: login.php');
-    exit();
-}
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -81,24 +43,41 @@ if (isset($_GET['logout'])) {
 
 <?php
 include("menu.php");
-
 // Llamar a la función para generar el menú
 generarMenu();
+
+include("conexion.php");
+$con = conectar();
+if (!$con) {
+    echo "Error de conexión: " . mysqli_connect_error();
+    exit();
+}
+$errors = array();
+// Inicio de sesión
+if (isset($_POST['login_button'])) {
+    $usuario = mysqli_real_escape_string($con, $_POST['usuario']);
+    $password = mysqli_real_escape_string($con, $_POST['password']);
+
+    $query = "SELECT * FROM usuarios WHERE usuario='$usuario' AND password='$password'";
+    $results = mysqli_query($con, $query);
+
+    if (mysqli_num_rows($results) == 1) {
+        // Inicio de sesión exitoso
+        $_SESSION['usuario'] = $usuario;
+        header('location: datos.php');
+        exit();
+    } else {
+        $errors[] = "Nombre de usuario/contraseña inválidos";
+    }
+}
+// Cierre de sesión
+if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['usuario']);
+    header('location: login.php');
+    exit();
+}
 ?>
-
-<div class="header-container">
-    <div class="header-left">
-        <!-- Aquí puede ir el logo u otra información -->
-    </div>
-    <div class="header-right">
-        <?php if (isset($_SESSION['usuario'])): ?>
-            <span><?php echo $_SESSION['usuario']; ?> (<a href="login.php?logout='1'">Cerrar sesión</a>)</span>
-        <?php else: ?>
-            <span><a href="login.php">Iniciar sesión</a></span>
-        <?php endif; ?>
-    </div>
-</div>
-
 <div class="container">
     <div class="d-flex min-vh-100">
         <div class="row d-flex flex-grow-1 justify-content-center align-items-center">
