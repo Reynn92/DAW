@@ -1,5 +1,4 @@
 <?php
-session_start();
 include("conexion.php");
 $con = conectar();
 
@@ -33,7 +32,7 @@ if (isset($_POST['login_button'])) {
             $stmt->bind_param("ssis", $nombre, $plataforma, $lanzamiento, $file_path);
 
             if ($stmt->execute()) {
-                header("location: datos.php");
+                header("location: juegos.php");
                 exit();
             } else {
                 $errors[] = "Error al insertar los datos: " . $stmt->error;
@@ -67,7 +66,7 @@ generarMenu();
     <div class="d-flex min-vh-100">
         <div class="row d-flex flex-grow-1 justify-content-center align-items-center">
             <div class="col-md-4 form login-form">
-                <form action="juego.php" method="POST" enctype="multipart/form-data" autocomplete="off">
+                <form action="añadirJuego.php" method="POST" enctype="multipart/form-data" autocomplete="off">
                     <h2 class="text-center">Añadir juego</h2>
 
                     <?php
@@ -87,7 +86,7 @@ generarMenu();
                             <input type="text" name="Plataforma" class="usuario" placeholder="Plataforma" required>
                         </div>
                         <div class="campo form-group mb-3">
-                            <input type="number" name="Lanzamiento" class="usuario" placeholder="Año de lanzamiento" required>
+                            <input type="date" name="Lanzamiento" class="usuario" placeholder="Año de lanzamiento" required>
                         </div>
                         <div class="campo form-group mb-3">
                             <input type="file" name="Imagen" class="usuario" required>

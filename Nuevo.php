@@ -1,5 +1,4 @@
 <?php
-  session_start();
   include("conexion.php");
   $con=conectar();
   if(!$con){
@@ -24,7 +23,7 @@ $insertar = "INSERT INTO usuarios (Nombre, Email,Usuario, Password) VALUES(
 $query = mysqli_query($con, $insertar);
 //si la consulta funcioa volvemos con el header al "inicio"
 if ($query) {
-    header("location: datos.php"); 
+    header("location: juegos.php"); 
     exit();
     }
     else {

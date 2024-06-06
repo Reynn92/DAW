@@ -9,7 +9,7 @@
             exit();
         }
         // es la consulta mas sencilla se asigna a un idaborrar que esta en el boton eliminar asignado en hidden
-        $sql = "DELETE FROM usuarios WHERE ID='" . $_POST['idaborrar'] . "'";
+        $sql = "DELETE FROM juegos WHERE ID='" . $_POST['idaborrar'] . "'";
 
         $resultado = mysqli_prepare($con,$sql);
         $ok = mysqli_stmt_execute($resultado);
@@ -42,7 +42,7 @@
 
 
 //declaramos la consulta en este caso para mostrarla en forma de tabla 
-$consulta = "SELECT ID,Nombre,Email,Usuario FROM usuarios";
+$consulta = "SELECT ID,Nombre,Plataforma,Lanzamiento,Imagen FROM juegos";
 $resultado = $con->query($consulta);
 //la metemos en un condicional con las lineas afectadas mayor 2que 0 y le ponemos borde y 
 // th para que tenga encabezado, teniendo en cuenta que es una matriz de datos 
@@ -101,7 +101,7 @@ if ($resultado->num_rows > 0)
 
 <div class="boton1">
     <div class="col-md-12 text-center">
-        <form action="Nuevo.php" method="post">
+        <form action="añadirJuego.php" method="post">
             <input type="hidden" name="accion" value="nuevo">
             <button type="submit" class="btnNuevo" id="btn"></button>
         </form>

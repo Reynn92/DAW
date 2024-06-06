@@ -28,7 +28,7 @@
         echo"error en la consulta";
     }else{
 
-        header('location: datos.php');
+        header('location: juegos.php');
 
         // if (isset($_GET["ID_Empleado"])){
         //     $sql="DELETE * FROM equipoempleado WHERE ID_Empleado='$_GET[ID_Empleado]'"; 

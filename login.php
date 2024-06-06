@@ -64,7 +64,7 @@ if (isset($_POST['login_button'])) {
     if (mysqli_num_rows($results) == 1) {
         // Inicio de sesión exitoso
         $_SESSION['usuario'] = $usuario;
-        header('location: datos.php');
+        header('location: juegos.php');
         exit();
     } else {
         $errors[] = "Nombre de usuario/contraseña inválidos";
