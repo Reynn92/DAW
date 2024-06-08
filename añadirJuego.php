@@ -83,7 +83,7 @@ generarMenu();
                             <input type="text" name="Nombre" class="usuario" placeholder="Nombre" required>
                         </div>
                         <div class="campo form-group mb-3">
-							<select name="Plataforma" required>
+							<select name="Plataforma" style="width: 100%;background-color: #000000;color:white";" required>
 							  <option value="GameBoy">GameBoy</option>
 							  <option value="NES">NES</option>
 							  <option value="SNES">SNES</option>

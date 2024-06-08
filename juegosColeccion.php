@@ -35,14 +35,9 @@
       
       // Llamar a la función para generar el menú
       generarMenu();
-      ?>
-    
-    <?php 
-//incluimos la conexion siempre al principio
-
 
 //declaramos la consulta en este caso para mostrarla en forma de tabla 
-$consulta = "SELECT ID,Nombre,Plataforma,Lanzamiento,Imagen, juegos_usuario.Usuario FROM `juegos` left JOIN juegos_usuario on juegos.ID=juegos_usuario.ID_Juego AND juegos_usuario.usuario='".$_SESSION['usuario']."'";
+$consulta = "SELECT ID,Nombre,Plataforma,Lanzamiento,Imagen, juegos_usuario.Usuario FROM `juegos` inner JOIN juegos_usuario on juegos.ID=juegos_usuario.ID_Juego wHERE juegos_usuario.usuario='".$_SESSION['usuario']."'";
 $resultado = $con->query($consulta);
 //la metemos en un condicional con las lineas afectadas mayor 2que 0 y le ponemos borde y 
 // th para que tenga encabezado, teniendo en cuenta que es una matriz de datos 

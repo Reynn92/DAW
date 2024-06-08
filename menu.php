@@ -10,7 +10,7 @@ function generarMenu() {
 	  <nav class="principal">
 		  <ul class="nav">
 			  <li><a href="index.php">Inicio</a></li>
-			  <li><a href="">Juegos</a>
+			  <li><a href="juegos.php">Juegos</a>
 				  <ul>
 					  <li><a href="juegos.php">TODOS</a></li>
 					  <li><a href="juegos.php">Gameboy</a></li>
@@ -21,14 +21,14 @@ function generarMenu() {
 				  </ul>
 			  </li>			  	  
 		<?php if (isset($_SESSION['usuario'])): ?>
-			  <li><a href="">Mi Colección</a>
+			  <li><a href="juegosColeccion.php">Mi Colección</a>
 				  <ul>
-					  <li><a href="juegos.php">TODOS</a></li>
-					  <li><a href="juegos.php">Gameboy</a></li>
-					  <li><a href="juegos.php">NES</a></li>
-					  <li><a href="juegos.php">SNES</a></li>
-					  <li><a href="juegos.php">Nintendo64</a></li>
-					  <li><a href="juegos.php">PlayStation</a></li>
+					  <li><a href="juegosColeccion.php">TODOS</a></li>
+					  <li><a href="juegosColeccion.php">Gameboy</a></li>
+					  <li><a href="juegosColeccion.php">NES</a></li>
+					  <li><a href="juegosColeccion.php">SNES</a></li>
+					  <li><a href="juegosColeccion.php">Nintendo64</a></li>
+					  <li><a href="juegosColeccion.php">PlayStation</a></li>
 				  </ul>
 			  </li>
 			  <li><a href="añadirJuego.php">Añadir</a></li>
