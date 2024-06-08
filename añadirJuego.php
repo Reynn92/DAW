@@ -83,7 +83,13 @@ generarMenu();
                             <input type="text" name="Nombre" class="usuario" placeholder="Nombre" required>
                         </div>
                         <div class="campo form-group mb-3">
-                            <input type="text" name="Plataforma" class="usuario" placeholder="Plataforma" required>
+							<select name="Plataforma" required>
+							  <option value="GameBoy">GameBoy</option>
+							  <option value="NES">NES</option>
+							  <option value="SNES">SNES</option>
+							  <option value="Nintendo64">Nintendo64</option>
+							  <option value="PlayStation">PlayStation</option>
+							</select>
                         </div>
                         <div class="campo form-group mb-3">
                             <input type="date" name="Lanzamiento" class="usuario" placeholder="Año de lanzamiento" required>
