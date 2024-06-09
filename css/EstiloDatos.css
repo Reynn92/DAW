@@ -25,9 +25,9 @@
     transform: translateX(-50%); 
     background-image: url('../img/marcadorInactive.png');
     background-repeat:no-repeat;
-    height:30px;
-    width:40px;
-    background-size: 30px 30px;
+    height:25px;
+    width:30px;
+    background-size: 25px 25px;
     background-position:center;
     background-color: transparent;
     border-color: transparent;
@@ -37,9 +37,57 @@
     transform: translateX(-50%); 
     background-image: url('../img/marcadorActive.png');
     background-repeat:no-repeat;
-    height:30px;
-    width:40px;
-    background-size: 30px 30px;
+    height:25px;
+    width:30px;
+    background-size: 25px 25px;
+    background-position:center;
+    background-color: transparent;
+    border-color: transparent;
+}
+.btnAcabadoSi {
+    margin-left: 50%;
+    transform: translateX(-50%); 
+    background-image: url('../img/AcabadoNo.png');
+    background-repeat:no-repeat;
+    height:25px;
+    width:30px;
+    background-size: 25px 25px;
+    background-position:center;
+    background-color: transparent;
+    border-color: transparent;
+}
+.btnCAcabadoNo {
+    margin-left: 50%;
+    transform: translateX(-50%); 
+    background-image: url('../img/AcabadoSi.png');
+    background-repeat:no-repeat;
+    height:25px;
+    width:30px;
+    background-size: 25px 25px;
+    background-position:center;
+    background-color: transparent;
+    border-color: transparent;
+}
+.btnCompararSi {
+    margin-left: 50%;
+    transform: translateX(-50%); 
+    background-image: url('../img/compradoNo.png');
+    background-repeat:no-repeat;
+    height:25px;
+    width:30px;
+    background-size: 25px 25px;
+    background-position:center;
+    background-color: transparent;
+    border-color: transparent;
+}
+.btnComprarNo {
+    margin-left: 50%;
+    transform: translateX(-50%); 
+    background-image: url('../img/compradoSi.png');
+    background-repeat:no-repeat;
+    height:25px;
+    width:30px;
+    background-size: 25px 25px;
     background-position:center;
     background-color: transparent;
     border-color: transparent;
@@ -48,9 +96,9 @@
 .btnNuevo{
     background-image: url('../img/mas.png');
     background-repeat:no-repeat;
-    height:50px;
-    width:50px;
-    background-size: 50px 50px;
+    height:25px;
+    width:30px;
+    background-size: 25px 25px;
     background-position:center;
     background-color: transparent;
     border-color: transparent;
@@ -59,9 +107,9 @@
 .btnEliminar{
     background-image: url('../img/cross-296507_1280.png');
     background-repeat:no-repeat;
-    height:30px;
-    width:40px;
-    background-size: 30px 30px;
+    height:25px;
+    width:30px;
+    background-size: 25px 25px;
     background-position:center;
     background-color: transparent;
     border-color: transparent;
@@ -70,9 +118,9 @@
 .btnEditar{
     background-image: url('../img/lapiz.png');
     background-repeat:no-repeat;
-    height:30px;
-    width:40px;
-    background-size: 30px 30px;
+    height:25px;
+    width:30px;
+    background-size: 25px 25px;
     background-position:center;
     background-color: transparent;
     border-color: transparent;

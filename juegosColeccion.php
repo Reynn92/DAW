@@ -62,6 +62,8 @@ $resultado = $con->query($consulta);
 				} else {
 					echo "<td style='background-color:transparent'><div class='btnColeccionAñadir'></div></td>";
 					}                        
+				echo "<td style='background-color:transparent'><div class='btnAcabadoSi'></div></td>";
+				echo "<td style='background-color:transparent'><div class='btnCompararSi'></div></td>";
 				echo "<td style='background-color:transparent'><div class='btnEditar'></div></td></tr></table></div>";
 				echo "</div></div>";
 		} }?>
